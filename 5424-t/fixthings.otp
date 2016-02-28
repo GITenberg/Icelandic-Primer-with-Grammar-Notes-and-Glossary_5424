@@ -1,0 +1,25 @@
+% OTP for composing various typographic symbols
+
+% Based on lat2uni.otp from the Omega distribution
+% Changes (c) 2002 Jonas Öster <d97ost@dtek.chalmers.se>
+
+% You may use, modify and redistribute this file
+% in any way you like.
+
+input: 2;
+output: 2;
+
+expressions:
+
+`-'`-'`-' => @"2014;
+`-'`-' => @"2013;
+%`-' => @"2010;
+``'``' => @"201C;
+``' => @"2018;
+`''`'' => @"201D;
+`'' => @"2019;
+`,'`,' => @"201E;
+`<'`<' => @"00AB;
+`>'`>' => @"00BB;
+
+. => \1;

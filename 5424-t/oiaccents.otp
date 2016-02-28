@@ -1,0 +1,35 @@
+% OTP for composing various accented characters in
+% Old Icelandic
+
+% (c) 2002 Jonas Öster <d97ost@dtek.chalmers.se>
+
+% You may use, modify and redistribute this file
+% in any way you like.
+
+% Modified 7-24-02 by Ben Crowder <crowderb@blankslate.net>
+
+input: 2;
+output: 2;
+
+expressions:
+
+% We want to use these combinations
+@"0118 @"0308 => "\Upperaccent{" @"0308 "}{\Loweraccent{" @"0328 "}{E}}";
+@"0119 @"0308 => "\Upperaccent{" @"0308 "}{\Loweraccent{" @"0328 "}{e}}";
+@"0118 => "\Loweraccent{" @"0328 "}{E}";
+@"0119 => "\Loweraccent{" @"0328 "}{e}";
+@"01EA @"0308 => "\Upperaccent{" @"0308 "}{\Loweraccent{" @"0328 "}{O}}";
+@"01EB @"0308 => "\Upperaccent{" @"0308 "}{\Loweraccent{" @"0328 "}{o}}";
+@"01EA => "\Loweraccent{" @"0328 "}{O}";
+@"01EB => "\Loweraccent{" @"0328 "}{o}";
+`y'@"0304 => "\Upperaccent{" @"0304 "}{y}";
+`Y'@"0304 => "\Upperaccent{" @"0304 "}{Y}";
+@"0233 => "\Upperaccent{" @"0304 "}{y}";
+@"0232 => "\Upperaccent{" @"0304 "}{Y}";
+@"00AF => @"00A0 @"0304;
+
+% All other characters are left unchanged.
+
+. => \1;
+
+
