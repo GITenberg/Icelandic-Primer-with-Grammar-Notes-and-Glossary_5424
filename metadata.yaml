@@ -1,5 +1,5 @@
 _repo: Icelandic-Primer-with-Grammar-Notes-and-Glossary_5424
-_version: 0.2.0
+_version: 0.2.1
 covers:
 - cover_type: generated
   image_path: cover.png
@@ -27,5 +27,6 @@ subjects:
 - !lcsh 'Old Norse language -- Grammar'
 - !lcsh 'Old Norse language -- Readers'
 - !lcc 'PD'
+- GITenberg
 title: Icelandic Primer with Grammar, Notes and Glossary
 url: http://www.gutenberg.org/ebooks/5424
